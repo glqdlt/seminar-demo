@@ -1,7 +1,7 @@
-<h2>Greeting Page</h2>
+<h2>My Name Is Greeting</h2>
 <div>
   <h4>Send Message</h4>
-  <label>Text : </label>
-  <input type="text" name="msg" #msg />
+  <label for="msg">Input Your Name : </label>
+  <input type="text" name="msg" #msg id="msg"/>
   <button type="button" (click)="sendMsg(msg.value)">Send</button>
 </div>

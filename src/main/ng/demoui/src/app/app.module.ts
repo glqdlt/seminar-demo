@@ -7,14 +7,14 @@ import {HelloComponent} from './hello/hello.component';
 import {RouterModule, Routes} from "@angular/router";
 import {SupportService} from "./support.service";
 import {HttpModule} from "@angular/http";
-import { NewCompComponent } from './new-comp/new-comp.component';
+import { TreeCompComponent } from './new-comp/tree-comp.component';
 
 
 const appRoutes: Routes = [
   {path: '', component: HelloComponent},
   {path: 'greeting', component: GreetingComponent},
   {path: 'hello', component: HelloComponent},
-  {path: 'new', component: NewCompComponent}
+  {path: 'tree', component: TreeCompComponent}
 ]
 
 
@@ -23,7 +23,7 @@ const appRoutes: Routes = [
     AppComponent,
     GreetingComponent,
     HelloComponent,
-    NewCompComponent
+    TreeCompComponent
   ],
   imports: [
     BrowserModule,

@@ -15,11 +15,11 @@ export class SupportService {
 
   sendMsg(message) {
 
-    console.log(this.apiUrl);
     return this.http.post(this.apiUrl, message).subscribe(res => {
       alert(res.text())
     }, err => {
-      alert('Server is Die!! '+ err)
+      alert('Server is Die!! ');
+      console.error(err);
     });
 
   }
