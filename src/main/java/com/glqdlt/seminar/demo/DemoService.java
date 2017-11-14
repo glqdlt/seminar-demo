@@ -1,6 +1,7 @@
 package com.glqdlt.seminar.demo;
 
 import org.springframework.stereotype.Service;
+import sun.applet.Main;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,13 +10,9 @@ import java.util.List;
 public class DemoService {
 
 
-    private List<Hero> list = new ArrayList<>();
-
-    public List<Hero> getList() {
-        return list;
+    public String sendMsg(String message) {
+        return "Nice to Meet You, " + message;
     }
 
-    synchronized public void setList(Hero hero) {
-        list.add(hero);
-    }
+
 }
