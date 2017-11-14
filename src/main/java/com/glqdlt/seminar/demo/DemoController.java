@@ -21,7 +21,7 @@ public class DemoController {
     @Autowired
     DemoService demoService;
 
-    @RequestMapping(value = "/",method = RequestMethod.POST)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     public ResponseEntity<String> AddMessage(@RequestBody String message) {
 
         log.info("Get Message ==> " + message);
