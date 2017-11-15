@@ -7,7 +7,7 @@ import {HelloComponent} from './hello/hello.component';
 import {RouterModule, Routes} from "@angular/router";
 import {SupportService} from "./support.service";
 import {HttpModule} from "@angular/http";
-import { TreeCompComponent } from './new-comp/tree-comp.component';
+import { TreeCompComponent } from './tree/tree-comp.component';
 
 
 const appRoutes: Routes = [
