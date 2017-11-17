@@ -7,14 +7,19 @@ import {HelloComponent} from './hello/hello.component';
 import {RouterModule, Routes} from "@angular/router";
 import {SupportService} from "./support.service";
 import {HttpModule} from "@angular/http";
-import { TreeCompComponent } from './tree/tree-comp.component';
+import {TreeCompComponent} from './tree/tree-comp.component';
+import {FormsModule} from "@angular/forms";
+import {DatabindComponent} from './databind/databind.component';
+import { MonolithComponent } from './monolith/monolith.component';
 
 
 const appRoutes: Routes = [
   {path: '', component: HelloComponent},
   {path: 'greeting', component: GreetingComponent},
   {path: 'hello', component: HelloComponent},
-  {path: 'tree', component: TreeCompComponent}
+  {path: 'tree', component: TreeCompComponent},
+  {path: 'databind', component: DatabindComponent},
+  {path: 'monolith', component : MonolithComponent}
 ]
 
 
@@ -23,11 +28,14 @@ const appRoutes: Routes = [
     AppComponent,
     GreetingComponent,
     HelloComponent,
-    TreeCompComponent
+    TreeCompComponent,
+    DatabindComponent,
+    MonolithComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [SupportService],
