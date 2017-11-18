@@ -4,8 +4,9 @@
 
 간단한 Server - Client, Single Page Application 의 이해를 위한 데모 프로젝트
 
-* Ng Component의 이해를 돕는다.
+* Component 기반 SPA의 이해를 돕는다.
 * Client / Server 의 독립적인 운영을 체험해 본다.
+
 
 ## Spring Boot Server Run
 Run Application
